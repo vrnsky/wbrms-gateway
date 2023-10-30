@@ -8,3 +8,7 @@ spring:
           uri: http://hkg.wbrms-menu-service.internal
           predicates:
             - Path=/menu/**
+        - id: deliveryService
+          uri: http://wbrms-food-delivery.internal
+          predicates:
+            - Path=/food/**
