@@ -5,6 +5,6 @@ spring:
     gateway:
       routes:
         - id: billingService
-          uri: http://wbrms-menu-service.internal
+          uri: http://hkg.wbrms-menu-service.internal
           predicates:
             - Path=/menu/**
