@@ -46,7 +46,12 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>wbrms-gateway</finalName>
 		<plugins>
+			<plugin>
+				<groupId>io.github.git-commit-id</groupId>
+				<artifactId>git-commit-id-maven-plugin</artifactId>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
