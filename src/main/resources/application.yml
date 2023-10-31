@@ -12,6 +12,10 @@ spring:
           uri: http://nrt.wbrms-food-delivery.internal:8080/food
           predicates:
             - Path=/food/**
+        - id: reservation-service
+          uri: http://hkg.wbrsm-reservation-service.internal:8080/reservation
+          predicates:
+            - Path=/reservation/***
 management:
   endpoints:
     web:
