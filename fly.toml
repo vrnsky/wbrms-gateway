@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for wbrms-gateway on 2023-10-30T18:34:38+08:00
+# fly.toml app configuration file generated for wbrms-gateway on 2023-10-30T23:39:44+08:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
 app = "wbrms-gateway"
-primary_region = "sin"
+primary_region = "nrt"
 
 [build]
 

@@ -4,11 +4,21 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: billingService
-          uri: http://hkg.wbrms-menu-service.internal
+        - id: billing-service
+          uri: http://nrt.wbrms-menu-service.internal:8080/menu
           predicates:
             - Path=/menu/**
-        - id: deliveryService
-          uri: http://wbrms-food-delivery.internal
+        - id: delivery-service
+          uri: http://nrt.wbrms-food-delivery.internal:8080/food
           predicates:
             - Path=/food/**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'info, health'
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
